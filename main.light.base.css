@@ -1,5 +1,6 @@
 * {
     --button-shadow: rgb(116, 116, 116);
+    font-family: sans-serif;
 }
 
 #title {
@@ -67,9 +68,10 @@ footer {
     inset-inline-end: 0;
     padding: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     opacity: 20%;
     z-index: 2;
+    font-family: monospace;
 }
 
 footer .material-symbols-outlined {
@@ -80,7 +82,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: var(--button-shadow);
+    color: #000000;
     text-decoration: underline;
 }
 

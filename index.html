@@ -4,7 +4,11 @@
     <head>
         <meta charset="utf8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Focus with white noise">
+        <meta name="keywords" content="white, noise, focus">
+        <meta name="author" content="MiRinChan">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="main.light.base.css">
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
@@ -17,14 +21,14 @@
         <noscript>Did you turn on Allow JavaScript?</noscript>
         <div class="controls">
             <p style="display: none;" id="loading">Still in loading...</p>
-            <div>
-                <div class="FixBox"><button id="play"><span class="material-symbols-outlined">
+            <div role="toolbar" aria-labelledby="control panel">
+                <div class="FixBox"><button aria-labelledby="play and pause" tabindex="1" role="option" aria-setsize="2" aria-posinset="1" id="play"><span class="material-symbols-outlined">
                             play_arrow
                         </span></button></div>
-                <div class="FixBox"><button id="dark"><span class="material-symbols-outlined">
+                <div class="FixBox"><button aria-labelledby="dark mode" tabindex="2" role="option" aria-setsize="2" aria-posinset="2" id="dark"><span class="material-symbols-outlined">
                             dark_mode
                         </span></button></div>
-                <div class="FixBox"><button id="clean"><span class="material-symbols-outlined">
+                <div class="FixBox" aria-hidden="true"><button tabindex="3" id="clean"><span class="material-symbols-outlined">
                             transition_fade
                         </span></button></div>
             </div>
@@ -32,14 +36,14 @@
 
         <div id="blankMode" class="hidden"><p class="tips">Blank mode is on. Click or touch to off.</p></div>
 
-        <audio preload="auto" loop style="display: none;" id="audio">
+        <audio aria-hidden="true" preload="auto" loop style="display: none;" id="audio">
             <source src="whitenoise.ogg" type="audio/ogg">
             Your browser is not supported.
         </audio>
-        <footer>
+        <footer aria-hidden="true" >
             <p><span class="material-symbols-outlined">
                     copyright
-                </span>MiRinChan | <a href="https://afdian.com/a/mirin">Donate with 爱发电</a> </p>
+                </span>MiRinChan | <a tabindex="-1" href="https://afdian.com/a/mirin">Donate with 爱发电</a> </p>
         </footer>
         <script src="main.script.js"></script>
     </body>

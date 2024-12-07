@@ -11,3 +11,12 @@ button {
     color: #FBFBFB;
     border: 5px solid #949494;
 }
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #FBFBFB;
+    text-decoration: underline;
+}
