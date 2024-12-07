@@ -2,6 +2,8 @@
 const playButton = document.querySelector("#play");
 const audio = document.getElementById("audio");
 
+
+
 // 播放按钮
 playButton.addEventListener("click", function () {
     if (audio.paused) {
@@ -68,6 +70,7 @@ const blankModeButton = document.getElementById("clean");
 const blankModePage = document.getElementById("blankMode");
 blankModeButton.addEventListener("click", () => {
     blankMode.classList.remove("hidden");
+    document.documentElement.requestFullscreen();
     setTimeout(() => {
         blankMode.querySelector("#blankMode p").style.opacity = "0";
     }, "1000");
@@ -75,7 +78,10 @@ blankModeButton.addEventListener("click", () => {
 
 blankModePage.addEventListener("click", () => {
     blankMode.classList.add("hidden");
+    document.exitFullscreen();
 });
+
+
 
 
 
