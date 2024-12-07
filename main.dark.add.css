@@ -1,0 +1,13 @@
+* {
+    --button-shadow: rgb(65, 65, 65);
+}
+
+html {
+    background-color: #111122;
+    color: #FBFBFB;
+}
+
+button {
+    color: #FBFBFB;
+    border: 5px solid #949494;
+}

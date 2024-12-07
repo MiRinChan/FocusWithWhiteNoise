@@ -1,0 +1,112 @@
+* {
+    --button-shadow: rgb(116, 116, 116);
+}
+
+#title {
+    font-family: sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+    margin-block-start: 15vh;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#title > span {
+    margin: -0.3rem;
+    opacity: 80%;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+button {
+    font-size: 1.3em;
+    outline-style: none;
+    border: 5px solid #363636;
+    border-radius: 13.7px;
+    margin: 5px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    background-color: transparent;
+    inline-size: 5rem;
+    block-size: 5rem;
+    box-shadow: 0 0.67rem 0 var(--button-shadow);
+    text-align: center;
+}
+
+/* button:focus, */
+button:hover {
+    box-shadow: 0 0.5rem 0 var(--button-shadow);
+    padding: 1.5rem 0.5rem 3.09rem 0.5rem;
+}
+
+button:active,
+.active,
+.active:hover {
+    box-shadow: 0 0.3rem 0 var(--button-shadow);
+    padding: 1.8rem 0.5rem 3rem 0.5rem;
+}
+
+.FixBox {
+    block-size: 7rem;
+}
+
+.controls {
+    text-align: center;
+    inline-size: 100%;
+}
+
+.controls > div {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+footer {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 20%;
+    z-index: 2;
+}
+
+footer .material-symbols-outlined {
+    font-size: 0.7em;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--button-shadow);
+    text-decoration: underline;
+}
+
+#loading {
+    font-family: sans-serif;
+    opacity: 15%;
+}
+
+#blankMode {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    background-color: black;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.tips {
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
